@@ -7,19 +7,15 @@
 body{
     background-color: #eaefdb;
     position: relative;
+    font-family: 'Architects Daughter', cursive;
 } 
 header {
-    /* display: grid;
-    grid-template-columns: auto auto auto; */
     height: 5vh;
     border-bottom: 3px solid #066d58;
-    /* background-image: url(vert.svg), url(vert.svg), url(vert.svg), url(vert.svg);
-    background-position-x: 5vw, calc(33vw - 3px), calc(66vw - 3px), calc(95vw - 3px);
-    background-repeat: repeat-y, repeat-y, repeat-y, repeat-y; */
 }
 .navwrapper{
-    margin-inline: 5vw;
-    border-right: 3px solid #066d58;
+    /* margin-inline: 5vw;
+    border-right: 3px solid #066d58; */
     height: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -28,24 +24,24 @@ header {
     /* grid-column-start: 3;
     grid-column-end: 3; */
     height: 100%;
-    border-left: 3px solid #066d58;
+    /* border-left: 3px solid #066d58; */
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 main{
     font-size: xx-large;
     background-color: aqua;
-    width: 50%;
-    margin-inline: auto;
+    /* width: 50%;
+    margin-inline: auto; */
 }
 .wrapper{
     min-height: calc(100vh - 5vh);
-    margin-inline: 5vw;
-    border-inline: 3px solid #066d58;
+    /* margin-inline: 5vw;
+    border-inline: 3px solid #066d58; */
     background-image: url(grid.svg);
     background-size: 6.68%;
     background-repeat: repeat;
     padding-bottom: 2em;
-}
-.container{
 }
 footer{
     /* background-color: blueviolet; */
@@ -60,5 +56,20 @@ footer{
     height: 100%;
     margin-inline: auto;
     /* background-color: seashell; */
+
+}
+@media (min-width: 768px){
+    main{
+        width: 50%;
+        margin-inline: auto;
+    }
+    .navitem{
+        border-left: 3px solid #066d58;
+        grid-column: unset;
+    }
+    .wrapper,.navewrapper{
+        margin-inline: 5vw;
+        border-inline: 3px solid #066d58;
+    }
 
 }
