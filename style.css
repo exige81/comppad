@@ -25,8 +25,8 @@ header {
     grid-column-end: 3; */
     height: 100%;
     /* border-left: 3px solid #066d58; */
-    grid-column-start: 1;
-    grid-column-end: 1;
+    /* grid-column-start: 1;
+    grid-column-end: 1; */
 }
 main{
     font-size: xx-large;
